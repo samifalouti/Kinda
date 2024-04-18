@@ -37,6 +37,91 @@
       </a>      
     </div>
   </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-image-container">
+        <img src="" alt="" id="modal-image">
+      </div>
+      <div class="modal-text-container">
+        <h2 id="modal-title"></h2>
+        <p id="modal-price"></p>
+      </div>
+      <div class="form-popup">
+        <form id="purchase-form" action="https://formsubmit.co/samifalouti02@gmail.com" method="POST">
+          <input type="hidden" id="titleInput" name="title" readonly>
+          <input type="hidden" id="priceInput" name="price" readonly>
+          <input type="radio" id="blackColor" name="color" value="Black">
+          <label for="blackColor" style="background-color: black;"></label>
+          <input type="radio" id="whiteColor" name="color" value="White">
+          <label for="whiteColor" style="background-color: white;"></label>
+          <input type="radio" id="blueColor" name="color" value="Blue">
+          <label for="blueColor" style="background-color: blue;"></label>
+          <select id="size" name="size">
+            <option value="" selected disabled>حدد الحجم</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <input type="text" id="fullNameInput" name="name" required placeholder="الاسم الكامل">
+          <input type="tel" id="numberInput" name="number" required placeholder="رقم الهاتف">
+          <select id="productOptions" name="productOptions">
+            <option value="" selected disabled>اختر مدينتك</option>
+            <option value="01. Adrar">1. Adrar</option>
+            <option value="02. Chlef">2. Chlef</option>
+            <option value="03. Laghouat">3. Laghouat</option>
+            <option value="04. Oum El Bouaghi">4. Oum El Bouaghi</option>
+            <option value="05. Batna">5. Batna</option>
+            <option value="06. Bejaïa">6. Bejaïa</option>
+            <option value="07. Biskra">7. Biskra</option>
+            <option value="08. Béchar">8. Béchar</option>
+            <option value="09. Blida">9. Blida</option>
+            <option value="10. Bouira">10. Bouira</option>
+            <option value="11. Tamanrasset">11. Tamanrasset</option>
+            <option value="12. Tebessa">12. Tebessa</option>
+            <option value="13. Tlemcen">13. Tlemcen</option>
+            <option value="14. Tiaret">14. Tiaret</option>
+            <option value="15. Tizi Ouzou">15. Tizi Ouzou</option>
+            <option value="16. Alger">16. Alger</option>
+            <option value="17. Djelfa">17. Djelfa</option>
+            <option value="18. Djijel">18. Djijel</option>
+            <option value="19. Sétif">19. Sétif</option>
+            <option value="20. Saïda">20. Saïda</option>
+            <option value="21. Skikda">21. Skikda</option>
+            <option value="22. Sidi Bel Abbès">22. Sidi Bel Abbès</option>
+            <option value="23. Annaba">23. Annaba</option>
+            <option value="24. Guelma">24. Guelma</option>
+            <option value="25. Constantine">25. Constantine</option>
+            <option value="26. Médéa">26. Médéa</option>
+            <option value="27. Mostaganem">27. Mostaganem</option>
+            <option value="28. M'Sila">28. M'Sila</option>
+            <option value="29. Mascara">29. Mascara</option>
+            <option value="30. Ouargla">30. Ouargla</option>
+            <option value="31. Oran">31. Oran</option>
+            <option value="32. El Bayadh">32. El Bayadh</option>
+            <option value="33. Illizi">33. Illizi</option>
+            <option value="34. Bordj Bou Arreridj">34. Bordj Bou Arreridj</option>
+            <option value="35. Boumerdès">35. Boumerdès</option>
+            <option value="36. El Tarf">36. El Tarf</option>
+            <option value="37. Tindouf">37. Tindouf</option>
+            <option value="38. Tissemsilt">38. Tissemsilt</option>
+            <option value="39. El Oued">39. El Oued</option>
+            <option value="40. Khenchela">40. Khenchela</option>
+            <option value="41. Souk Ahras">41. Souk Ahras</option>
+            <option value="42. Tipaza">42. Tipaza</option>
+            <option value="43. Mila">43. Mila</option>
+            <option value="44. Aïn Defla">44. Aïn Defla</option>
+            <option value="45. Naâma">45. Naâma</option>
+            <option value="46. Aïn Témouchent">46. Aïn Témouchent</option>
+            <option value="47. Ghardaia">47. Ghardaia</option>
+            <option value="48. Relizane">48. Relizane</option>
+          </select>
+          <button type="submit">Buy</button>
+        </form>
+      </div>
+      <span class="close">&times;</span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
